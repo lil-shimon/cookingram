@@ -44,7 +44,7 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background-image: url(https://lils-himon-canada-fashion.com/wp-content/uploads/2020/08/background.jpg);
+    background-image: url(https://lils-himon-canada-fashion.com/wp-content/uploads/2020/08/cropped-GettyImages-6437645141.jpg);
     background-size: cover;
     background-position: center;
     position: relative;overflow: hidden;
@@ -78,6 +78,13 @@ h1{
     font-size: 80px;
     margin: 10px 0 30px;
     line-height: 80px;
+}
+
+.right{
+    position: absolute;
+    color: #fbfcfd;
+    text-align: right;
+    margin: 0 0 0 850px;
 }
 
 .side-bar{
@@ -153,23 +160,47 @@ h1{
     animation-delay: 2s;
 }
 .bubbles img:nth-child(2){
-    animation-delay: 1s;
+    animation-delay: 4s;
+    width: 15px;
 }
 .bubbles img:nth-child(3){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 2s;
+    width: 35px;
+}
+.bubbles img:nth-child(5){
     width: 25px;
     animation-delay: 3s;
 }
-.bubbles img:nth-child(4){
+.bubbles img:nth-child(6){
+    animation-delay: 5s;
+    width: 30px;
+}
+.bubbles img:nth-child(7){
     animation-delay: 4.5s;
 }
-.bubbles img:nth-child(5){
+.bubbles img:nth-child(8){
+    animation-delay: 7s;
+    width: 35px;
+}
+.bubbles img:nth-child(9){
     animation-delay: 3s;
 }
-.bubbles img:nth-child(6){
+.bubbles img:nth-child(10){
+    animation-delay: 2.5s;
+    width: 25px;
+}
+.bubbles img:nth-child(11){
     animation-delay: 6s;
     width: 20px;
 }
-.bubbles img:nth-child(7){
+.bubbles img:nth-child(12){
+    animation-delay: 5.5s;
+    width: 35px;
+}
+.bubbles img:nth-child(13){
     animation-delay: 7s;
     width: 35px;
 }
