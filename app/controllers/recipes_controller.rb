@@ -42,8 +42,13 @@ class RecipesController < ApplicationController
     redirect_to user_path(recipe.user), notice: "レシピを削除しました。"
   end
 
+  def bookmarks
+    @recipes = current_user.bookmark_recipes.includes(:user).recent
+  end
+
   private
   def recipe_params
     params.require(:recipe).permit(:title, :body, :image, :comment)
   end
 end
+
