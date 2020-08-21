@@ -5,6 +5,7 @@
  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
+ 
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
@@ -39,6 +40,7 @@
     margin: 0;
     padding: 0%;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 .hero{
@@ -48,6 +50,7 @@
     background-size: cover;
     background-position: center;
     position: relative;overflow: hidden;
+    opacity: 0.85;
 }
 
 .logo{
@@ -78,13 +81,76 @@ h1{
     font-size: 80px;
     margin: 10px 0 30px;
     line-height: 80px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .right{
     position: absolute;
+    top: 30px;
+    right: 100px;
     color: #fbfcfd;
-    text-align: right;
+    text-align: left;
     margin: 0 0 0 850px;
+}
+
+.right p {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.right span {
+  color: #00b7ce;
+  font-weight: bold;
+}
+
+.btn-wrapper {
+  margin-top: 55px;
+  text-align: center;
+}
+
+
+
+.btn-wrapper a {
+  color: #fbfcfd;
+}
+
+.signupbtn {
+  background-color: #239b76;
+  padding: 8px 24px;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signupbtn:hover {
+  opacity: 1;
+}
+.facebook {
+   background-color: #3b5998;
+   margin-right: 10px;
+   padding: 8px 24px;
+   display: inline-block;
+   opacity: 0.8;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.facebook:hover {
+  opacity: 1;
+}
+
+.twitter {
+   background-color: #55acee;
+   padding: 8px 24px;
+   display: inline-block;
+   opacity: 0.8;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.twitter:hover {
+  opacity: 1;
 }
 
 .side-bar{
@@ -204,3 +270,41 @@ h1{
     animation-delay: 7s;
     width: 35px;
 }
+
+@media ( max-width: 1000px ) {
+ .hero {
+   width: 100%;
+ }
+ .navbar {
+   width: 100%;
+ }
+ .right {
+   margin-right: 100px;
+ }
+
+}
+
+@media ( max-width: 670px ) {
+ .hero {
+   width: 100%;
+   text-align: right;
+ }
+
+ .navbar {
+   width: 100%;
+ }
+
+ .right {
+   position: absolute;
+   right: 25px;
+   top: 15px;
+   text-align: left;
+}
+h1 {
+  font-size: 50px;
+}
+}
+
+
+
+
